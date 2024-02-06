@@ -1,0 +1,36 @@
+.item {
+    max-width: 500px;
+    margin-inline: auto;
+    color: #e7e6e6;
+}
+
+.cap {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 10px;
+}
+
+.img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.icons {
+    font: var(--font-l);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.likes {
+    margin: 10px 0;
+}
+
+.subInfo {
+    margin: 0;
+}
+
+.usename {
+    font-weight: 600;
+}

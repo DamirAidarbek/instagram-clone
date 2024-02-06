@@ -1,0 +1,39 @@
+.Header {
+    background: beige;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 10px 10px rgba(0 ,0 , 0, .1);
+    margin-bottom: 20px;
+}
+
+.headerWrapper {
+    max-width: 1170px;
+    margin-inline: auto;
+    padding: .7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--logo-color);
+    font: var(--font-l);
+    cursor: pointer;
+}
+
+.avatar {
+    font: var(--font-l);
+    cursor: pointer;
+    color: var(--logo-color);
+    margin: 0;
+    padding: 0;
+}
+
+.avatarWrapper {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}

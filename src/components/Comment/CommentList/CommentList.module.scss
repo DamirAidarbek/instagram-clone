@@ -1,0 +1,33 @@
+.all {
+    font: var(--font-s);
+    opacity: .7;
+    margin-left: 5px;
+}
+
+.input {
+    font: var(--font-s);
+    background: none;
+    color: #e7e6e6;
+
+    &::placeholder {
+        color: #e7e6e6;
+    }
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+.hr {
+    margin-bottom: 0;
+}

@@ -1,0 +1,29 @@
+.label {
+    font: var(--font-m);
+    margin-right: 15px;
+}
+
+.inputWrapper {
+    position: relative;
+    width: fit-content;
+    display: inline-block;
+
+    &::after {
+        content:"";
+        position:absolute;
+        bottom:0;
+        left: 0;
+        height:2px;
+        width: 60%;
+        background: #E1306C;
+    }
+}
+
+.inputItem {
+    border: none;
+    padding: .5rem;
+
+    &:focus {
+        outline: none;
+    }
+}

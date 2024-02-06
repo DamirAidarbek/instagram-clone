@@ -1,0 +1,33 @@
+.form {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.cap {
+    display: flex;
+    align-items: center;
+    font: var(--font-l);
+    margin-bottom: 25px;
+}
+
+.icon {
+    margin-left: auto;
+    cursor: pointer;
+
+    &:hover {
+        opacity: .7;
+    }
+}
+
+.title {
+    margin-left: auto;
+}
+
+.input {
+    margin-bottom: 1.1rem;
+}
+
+.button {
+    float: right;
+}

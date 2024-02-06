@@ -1,0 +1,12 @@
+.CardList {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.loader {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

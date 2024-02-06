@@ -1,0 +1,12 @@
+.Button {
+    background: none;
+    outline: none;
+    padding: .3rem .5rem;
+    cursor: pointer;
+    font: var(--font-m);
+    margin: 0;
+
+    &:hover {
+        opacity: .7;
+    }
+}
