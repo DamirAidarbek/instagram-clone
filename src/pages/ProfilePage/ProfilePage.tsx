@@ -19,14 +19,14 @@ function ProfilePage() {
     const navigate = useNavigate()
 
     const { data: posts, isLoading: postsLodaing } = useQuery({
-        queryKey: ['posts'],
+        queryKey: ['posts', userId],
         queryFn: () => PostService.fetchPostsByUserId(userId!),
         enabled: !!userId,
-        select: (response) => response.data
+        select: (response) => response.data,
     })
 
     const { data: user, isLoading: userLoading, isFetching } = useQuery({
-        queryKey: ['userData'],
+        queryKey: ['userData', userId],
         queryFn: () => ProfileService.fetchProfileData(userId!),
         enabled: !!userId,
         select: (response) => response.data
@@ -53,7 +53,7 @@ function ProfilePage() {
                     <Text title={user?.username} className={cls.username} />
                     <div className={cls.info}>
                         <Text text={String(posts?.length) + ' publishes'} />
-                        <Text text='0 likes' />
+                        <Text text={`${user?.likes.length} likes`} />
                         <Text text='0 follows' />
                     </div>
                     {userData?.id === user?.id && <Button onClick={logout} className={cls.logout}>Выйти из аккаунта</Button>}

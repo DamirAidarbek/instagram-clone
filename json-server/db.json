@@ -41,19 +41,14 @@
   ],
   "likes": [
     {
-      "postId": 2,
-      "userId": 1,
-      "id": 1
-    },
-    {
-      "postId": 1,
-      "userId": 1,
-      "id": 3
-    },
-    {
       "postId": 3,
       "userId": 1,
       "id": 4
+    },
+    {
+      "postId": 4,
+      "userId": 1,
+      "id": 5
     }
   ],
   "comments": [
@@ -92,18 +87,6 @@
       "postId": "2",
       "text": "My car",
       "id": 6
-    },
-    {
-      "userId": 1,
-      "postId": 1,
-      "text": "Erasyl loh koti bok",
-      "id": 7
-    },
-    {
-      "userId": 1,
-      "postId": 2,
-      "text": "Kazy toje loh",
-      "id": 8
     }
   ]
 }
