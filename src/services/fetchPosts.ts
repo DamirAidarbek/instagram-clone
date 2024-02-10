@@ -12,9 +12,10 @@ export function fetchPosts() {
             try {
                 setIsLoading(true)
                 setError(null)
-                const response = await $api.get<Post[]>('/posts', {
+                const response = await $api.get<Post[]>('posts', {
                     params: {
-                        _expand: 'user'
+                        _expand: 'user',
+                        _embed: 'likes',
                     }
                 })
 

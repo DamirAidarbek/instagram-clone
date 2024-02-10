@@ -1,13 +1,14 @@
 import {$api} from "../config/api/api.ts";
 import {Post} from "../types/types.ts";
 
+export async function fetchPostsByUserId(userId: string | undefined) {
 
-export async function fetchPostsByUserId(userId: string) {
+    if (!userId) return undefined
 
     try {
         const response = await $api.get<Post[]>('/posts', {
             params: {
-                userId
+                userId  
             }
         })
 

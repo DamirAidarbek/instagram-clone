@@ -9,6 +9,8 @@
     align-items: center;
     gap: 7px;
     margin-bottom: 10px;
+    text-decoration: none;
+    color: inherit;
 }
 
 .img {
@@ -33,4 +35,15 @@
 
 .usename {
     font-weight: 600;
+}
+
+.button {
+    border: none;
+    padding: 0;
+    color: inherit;
+
+    svg {
+        width: 100%;
+        height: 100%;
+    }
 }

@@ -1,13 +1,13 @@
 {
   "users": [
     {
-      "id": "1",
+      "id": 1,
       "username": "Damir",
       "password": "1234",
       "avatar": "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-760w,f_auto,q_auto:best/rockcms/2024-02/240102-lewis-hamilton-mb-1209-65adb6.jpg"
     },
     {
-      "id": "2",
+      "id": 2,
       "username": "Albert",
       "password": "4321",
       "avatar": "https://cdn.images.express.co.uk/img/dynamic/73/590x/secondary/Michael-Schumacher-health-4942137.jpg?r=1694797166233"
@@ -15,25 +15,25 @@
   ],
   "posts": [
     {
-      "id": "1",
+      "id": 1,
       "userId": "1",
       "title": "Have a nice day",
       "img": "https://s.auto.drom.ru/i24270/c/photos/fullsize/ferrari/f40/ferrari_f40_1076901.jpg"
     },
     {
-      "id": "2",
+      "id": 2,
       "userId": "2",
       "title": "Mercedes 300 SL",
       "img": "https://motor.ru/imgs/2019/05/21/12/3376517/919030be9a46bd58536ed88174a03fd59bc338bc.jpg"
     },
     {
-      "id": "3",
+      "id": 3,
       "userId": "1",
       "title": "Beautiful picture",
       "img": "https://assets.porsche.com/md/moldova/-/media/Project/DealerWebsites/SharedDealersWebsite/Master-Model-Page/911-Dakar/Header/VM22_5456_2560x1440.jpg?rev=-1"
     },
     {
-      "id": "4",
+      "id": 4,
       "userId": "1",
       "title": "RS7 mmmm",
       "img": "https://s1.cdn.autoevolution.com/images/news/gallery/spectacular-looking-2023-audi-rs-7-reveals-its-dark-side-in-this-in-depth-look_7.jpg"
@@ -41,9 +41,19 @@
   ],
   "likes": [
     {
-      "id": "1",
-      "userId": "1",
-      "postId": "1"
+      "postId": 2,
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "postId": 1,
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "postId": 3,
+      "userId": 1,
+      "id": 4
     }
   ],
   "comments": [
@@ -76,6 +86,24 @@
       "postId": "2",
       "text": "Some comment",
       "id": 5
+    },
+    {
+      "userId": "2",
+      "postId": "2",
+      "text": "My car",
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "postId": 1,
+      "text": "Erasyl loh koti bok",
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "postId": 2,
+      "text": "Kazy toje loh",
+      "id": 8
     }
   ]
 }

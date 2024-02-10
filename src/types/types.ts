@@ -12,6 +12,7 @@ export interface Post {
     title: string
     img: string
     user: User
+    likes: Like[]
 }
 
 export interface Comment {
@@ -20,4 +21,10 @@ export interface Comment {
     postId: string
     text: string
     user: User
+}
+
+export interface Like {
+    id: string
+    userId: string
+    postId: string
 }

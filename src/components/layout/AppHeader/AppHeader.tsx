@@ -21,8 +21,8 @@ function AppHeader() {
     }, [])
 
     const navigateToProfile = useCallback(() => {
-        navigate(RoutePaths.profile)
-    }, [])
+        navigate(`${RoutePaths.profile}/${user?.id}`)
+    }, [user])
 
     const navigateToMain = useCallback(() => {
         navigate(RoutePaths.main)

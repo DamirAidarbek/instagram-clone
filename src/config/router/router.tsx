@@ -18,7 +18,7 @@ export const AppRouterProps: Record<AppRoutes, RouteProps> = {
         element: <MainPage />
     },
     [AppRoutes.PROFILE]: {
-        path: RoutePaths.profile,
+        path: `${RoutePaths.profile}/:id`,
         element: <ProfilePage />
     }
 }

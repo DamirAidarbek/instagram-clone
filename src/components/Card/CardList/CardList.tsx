@@ -1,22 +1,27 @@
-import CardItem from "../CardItem/CardItem.tsx";
-import cls from './CardList.module.scss'
-import {fetchPosts} from "../../../services/fetchPosts.ts";
+import { useQuery } from "@tanstack/react-query";
+import { memo } from "react";
+import PostService from "../../../services/post.service.ts";
 import Loader from "../../../ui/Loader/Loader.tsx";
-import {memo} from "react";
+import CardItem from "../CardItem/CardItem.tsx";
+import cls from './CardList.module.scss';
 
 function CardList() {
-    const { posts, isLoading } = fetchPosts()
+    const { data: posts, isLoading, isFetching } = useQuery({
+        queryKey: ['allPosts'],
+        queryFn: PostService.fetchPosts,
+        select: (response) => response.data
+    })
 
-    if (isLoading) {
+    if (isLoading || isFetching) {
         return (
             <Loader className={cls.loader} />
         )
     }
 
     return (
-        <div className={cls.CardList}>
-            {posts.map(post => <CardItem post={post} key={post.id} />)}
-        </div>
+        <main className={cls.CardList}>
+            {posts?.map(post => <CardItem post={post} key={post.id} />)}
+        </main>
     );
 }
 
